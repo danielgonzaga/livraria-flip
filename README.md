@@ -1,27 +1,7 @@
 # LivrariaFlip
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.3.
+Projeto de uma livraria fictícia, desenvolvido utilizando o framework [Angular](https://angular.io/).
 
-## Development server
+# Como rodar a aplicação
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Primeiramente, baixe todas as dependências do projeto utilizando o comando `npm install`. Para subir a aplicação, utilize o comando `ng serve` do [Angular CLI](https://angular.io/cli). O projeto utiliza a biblioteca [json-server](https://www.npmjs.com/package/json-server) para simular uma API REST, logo, é necessário que rode o comando `json-server --watch db.json` em outro terminal para subir o Banco de Dados simulado, do qual o projeto depende.

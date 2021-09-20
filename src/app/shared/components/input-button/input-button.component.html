@@ -1,0 +1,4 @@
+<button class="input-button" [ngStyle]="{'background-color': transparent ? 'transparent' : '#26c565', 'color': transparent ? '#828282' : '#fff'}">
+    <i-feather *ngIf="icon" [name]="icon"></i-feather>
+    <span *ngIf="label" [style.text-decoration]="transparent ? 'underline' : 'none'">{{ label }}</span>
+</button>

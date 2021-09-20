@@ -1,0 +1,6 @@
+<div class="cards">
+    <app-book-card *ngFor="let book of bookList"
+        [item]="book"
+        (counterChange)="counterChange()"
+    ></app-book-card>
+</div>

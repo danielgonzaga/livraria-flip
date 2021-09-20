@@ -1,0 +1,21 @@
+<div class="card-wrapper">
+    <span class="book-title">{{ item.name }}</span>
+    <section class="middle">
+        <img 
+            [src]="item.cover" 
+            class="book-cover"
+        >
+        <div class="middle-second-section">
+            <span class="description-text">{{ item.description }}</span>
+            <h1>R${{ item.price.toFixed(2) | numberComma }}</h1>
+        </div>
+    </section>
+    <div class="button-wrapper">
+        <!-- <button class="add-button"><i-feather name="plus-circle"></i-feather><span>Adicionar ao carrinho</span></button> -->
+        <app-input-button
+            icon="plus-circle"
+            label="Adicionar ao carrinho"
+            (click)="handleBookAdd()"
+        ></app-input-button>
+    </div>
+</div>

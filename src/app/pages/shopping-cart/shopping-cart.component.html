@@ -1,0 +1,14 @@
+<h1>Carrinho</h1>
+<div class="cart" *ngIf="cartItems.length > 0; else noItems">
+    <div class="items">
+        <app-shopping-cart-item *ngFor="let item of cartItems" [book]="item" (qtyUpdate)="qtyUpdate($event)"></app-shopping-cart-item>
+    </div>
+    <div class="total">
+        <span class="total-text">Total</span>
+        <h1>R${{ totalPrice.toFixed(2) | numberComma }}</h1>
+    </div>
+</div>
+
+<ng-template #noItems>
+    <h2>Seu carrinho está vazio. Que tal escolher alguns livros?</h2>
+</ng-template>

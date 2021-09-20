@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+    color: #636363;
+}
+
+.total {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    justify-content: flex-end;
+}
+
+.total-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 2rem;
+}
+
+h2 {
+    text-align: center;
+}

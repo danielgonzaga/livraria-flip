@@ -1,0 +1,22 @@
+<div class="item-wrapper">
+    <div class="image-section">
+        <img 
+            [src]="book.cover" 
+            class="item-image"
+        >
+    </div>
+    <div class="book-section">
+        <span class="item-name">{{ book.name }}</span>
+        <p class="item-description">{{ book.description }}</p>
+    </div>
+    <div class="qtd-section">
+        <app-input-number class="input-qtd" [value]="book.qty" (valueChange)="bookValueChange($event)"></app-input-number>
+    </div>
+    <div class="price-section">
+        <h1 class="item-price">R${{ (book.price * book.qty).toFixed(2) | numberComma}}</h1>
+    </div>
+    <div class="remove-section">
+        <app-input-button (click)="removeAll()" label="Remover" [transparent]="true"></app-input-button>
+        <!-- <i-feather name="x-circle"></i-feather><span>Remover</span> -->
+    </div>
+</div>

@@ -1,0 +1,60 @@
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+  
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.number-input {
+    display: flex;
+    justify-content: center;
+}
+
+.input-field {
+    width: 2rem;
+    height: 2rem;
+    border-top: 1px #d6d6d6 solid;
+    border-bottom: 1px #d6d6d6 solid;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    text-align: center;
+    font-weight: bold;
+}
+
+.add-button {
+    background-color: #fff;
+    height: 2.25rem;
+    border-top: 1px #d6d6d6 solid;
+    border-right: 1px #d6d6d6 solid;
+    border-bottom: 1px #d6d6d6 solid;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: transparent;
+    color: #26c565;
+    cursor: pointer;
+}
+
+.minus-button {
+    background-color: #fff;
+    height: 2.25rem;
+    border-top: 1px #d6d6d6 solid;
+    border-left: 1px #d6d6d6 solid;
+    border-bottom: 1px #d6d6d6 solid;
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: transparent;
+    color: #db6464;
+    cursor: pointer;
+}
+
+i-feather {
+    display: flex;
+    width: 1rem;
+}

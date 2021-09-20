@@ -1,0 +1,5 @@
+<div class="bar">
+    <span class="title" (click)="goToBooksList()">Livraria<b>Flip</b></span>
+    <i-feather name="shopping-cart" class="cart" (click)="goToCart()"></i-feather>
+    <app-number-box *ngIf="qty > 0" class="number-box" [number]="qty"></app-number-box>
+</div>
